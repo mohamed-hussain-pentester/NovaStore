@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_l" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#fef9c3" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg_l)"/>
+  <!-- Light cone illumination -->
+  <polygon points="120,185 480,185 540,390 60,390" fill="url(#warmLight)"/>
+  <!-- Lamp Bar -->
+  <rect x="90" y="165" width="420" height="22" rx="11" fill="#334155"/>
+  <rect x="110" y="178" width="380" height="7" rx="3" fill="#fef08a"/>
+  <!-- Center mount clip -->
+  <rect x="280" y="145" width="40" height="30" rx="6" fill="#475569"/>
+  <!-- Counterweight back mount -->
+  <rect x="270" y="125" width="60" height="24" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <!-- Dial dial remote control -->
+  <circle cx="470" cy="340" r="32" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <circle cx="470" cy="340" r="24" fill="#334155"/>
+  <circle cx="470" cy="326" r="3" fill="#f59e0b"/>
+</svg>

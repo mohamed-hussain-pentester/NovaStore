@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_dm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="felt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg_dm)"/>
+  <!-- Wooden desk surface perspective -->
+  <polygon points="40,380 560,380 520,120 80,120" fill="#f5ebe0"/>
+  <!-- Large Felt Desk Mat -->
+  <polygon points="70,350 530,350 490,160 110,160" fill="url(#felt)"/>
+  <!-- Cork underlay edge border -->
+  <polygon points="68,353 532,353 530,350 70,350" fill="#d97706" opacity="0.8"/>
+  <!-- Minimalist accessories on mat -->
+  <!-- Laptop outline -->
+  <polygon points="180,310 380,310 365,200 205,200" fill="#64748b" opacity="0.9"/>
+  <polygon points="190,295 370,295 358,210 212,210" fill="#0f172a"/>
+  <!-- Coffee mug -->
+  <circle cx="430" cy="240" r="22" fill="#e2e8f0"/>
+  <circle cx="430" cy="240" r="17" fill="#78350f"/>
+  <!-- Pen -->
+  <line x1="140" y1="280" x2="155" y2="220" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+</svg>

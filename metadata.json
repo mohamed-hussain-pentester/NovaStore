@@ -1,0 +1,6 @@
+{
+  "name": "NovaStore — Modern E-Commerce Frontend",
+  "description": "A modern, responsive e-commerce storefront for electronics and lifestyle goods with mock data and Flask REST API integration readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_dp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="cordura" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg_dp)"/>
+  <!-- Shadow -->
+  <ellipse cx="300" cy="385" rx="130" ry="22" fill="#94a3b8" opacity="0.45"/>
+  <!-- Top handle -->
+  <path d="M 260,110 C 260,85 340,85 340,110" stroke="#0f172a" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Main backpack silhouette -->
+  <path d="M 200,360 C 190,360 180,240 210,130 C 230,95 370,95 390,130 C 420,240 410,360 400,360 Z" fill="url(#cordura)"/>
+  <!-- Front flap / tech compartment -->
+  <path d="M 220,180 L 380,180 L 375,340 L 225,340 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <!-- Weatherproof PU zipper line -->
+  <line x1="235" y1="210" x2="365" y2="210" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <rect x="295" y="206" width="10" height="8" rx="2" fill="#94a3b8"/>
+  <!-- Subtle minimal logo tag -->
+  <rect x="235" y="310" width="24" height="12" rx="2" fill="#0f172a"/>
+  <!-- Magnetic fidlock clasp accent -->
+  <rect x="288" y="250" width="24" height="32" rx="4" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <rect x="296" y="260" width="8" height="12" rx="1" fill="#f59e0b"/>
+</svg>

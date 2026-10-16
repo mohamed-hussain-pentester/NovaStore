@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Demo Account — NovaStore</title>
+  <meta name="description" content="Simulated user registration for NovaStore and Flask REST API practice.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-row">
+        <a href="index.html" class="brand" aria-label="NovaStore Homepage">
+          <span class="brand-mark">N</span>
+          <span>NovaStore</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Store</a>
+          <a href="orders.html">Orders</a>
+          <a href="admin.html">Admin Practice</a>
+          <a href="API_CONTRACT.md" target="_blank">API Docs</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-trigger-btn" aria-label="View Shopping Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-count-badge tabular-nums">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1 class="auth-title">Create Account</h1>
+        <p class="auth-subtitle">Client-side demo registration for backend practice</p>
+      </div>
+
+      <div class="demo-quickfill-strip">
+        <div>
+          <strong>Practice Sandbox:</strong>
+          <div style="color:var(--color-text-muted); font-size:0.75rem;">Autofills realistic registration test fields</div>
+        </div>
+        <button type="button" class="btn btn-secondary btn-sm" id="quickfill-register-btn">
+          Fill Sample
+        </button>
+      </div>
+
+      <form id="register-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="reg-name">Full Name <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="reg-name" 
+            class="form-control" 
+            placeholder="Taylor Jordan" 
+            required 
+            autocomplete="name"
+          >
+          <div class="invalid-feedback">Full name is required.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-email">Email Address <span class="required">*</span></label>
+          <input 
+            type="email" 
+            id="reg-email" 
+            class="form-control" 
+            placeholder="taylor@example.com" 
+            required 
+            autocomplete="email"
+          >
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-password">Password <span class="required">*</span></label>
+          <input 
+            type="password" 
+            id="reg-password" 
+            class="form-control" 
+            placeholder="At least 6 characters" 
+            required 
+            autocomplete="new-password"
+          >
+          <div class="invalid-feedback">Password must be at least 6 characters long.</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-confirm-password">Confirm Password <span class="required">*</span></label>
+          <input 
+            type="password" 
+            id="reg-confirm-password" 
+            class="form-control" 
+            placeholder="Re-enter password" 
+            required 
+            autocomplete="new-password"
+          >
+          <div class="invalid-feedback">Passwords do not match.</div>
+        </div>
+
+        <div style="font-size:0.75rem; color:var(--color-text-muted); margin-bottom:1.25rem; line-height:1.4;">
+          🛡️ <strong>Demo Notice:</strong> No real account is created on an external database. When your Flask backend is connected, this submits to <code>POST /api/v1/auth/register</code>.
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          Create Demo Account
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Already have a demo account? <a href="login.html">Sign in here</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 NovaStore. Frontend only — Crafted for Python Flask REST API development practice.</div>
+        <div><a href="index.html" style="text-decoration:underline;">Back to Store</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/mock-data.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
